@@ -13,8 +13,8 @@
 
 Для начала выгружаем файлы из папки, если файл расшерения не csv, то пропускаем его и не добавляем в датафрейм. Отобрать файлы можно с помощью библиотеки `glob`, позволяющей отобрать файлы по шаблону
 
-`filts = glob.glob('Входящие *.csv') 
+`{python}< >{filts = glob.glob('Входящие *.csv') 
 dfs =[]
 for file_name in filts:
   small_df = pd.read_csv(file_name, skiprows = 1, sep = ';', encoding='windows-1251', header=None)
-  dfs.append(small_df)`
+  dfs.append(small_df)}`
